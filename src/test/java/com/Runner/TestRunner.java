@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions( features= "src\\test\\java\\com\\featurefile\\file.feature" , 
 			 	  glue= "com.StepDefinition" ,
 			 	 // dryRun = true,
-			 	  plugin = {"html:Reports/file.html" , "pretty"} )
+			 	  plugin = {"html:Reports/file.html" , "pretty", "json:target/cucumber.json"} )
 public class TestRunner {
 
 	@BeforeClass
